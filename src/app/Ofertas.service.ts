@@ -1,6 +1,7 @@
+import { Oferta } from './shared/Oferta.model';
 export class OfertasService {
 
-    public ofertas: Array<any> = [
+    public ofertas: Array<Oferta> = [
             {
                 id: 1,
                 categoria: "restaurante",
@@ -54,7 +55,7 @@ export class OfertasService {
     constructor() {
 
     }
-    public getOfertas(): Array<string> {
+    public getOfertas(): Array<Oferta> {
         return this.ofertas;
     }
 }
