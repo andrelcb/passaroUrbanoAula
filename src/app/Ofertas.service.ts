@@ -41,7 +41,7 @@ export class OfertasService {
         })
    }
 
-   public getOndeFicaOfertasPorId(id: numver) :Promise<string>{
+   public getOndeFicaOfertasPorId(id: number) :Promise<string>{
        return this.http.get(`${URL_API}/onde-fica?id=${id}`)
        .toPromise()
        .then((response: any) => {
